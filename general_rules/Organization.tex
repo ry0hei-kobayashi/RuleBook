@@ -1,30 +1,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Organization of the competition}
+\section{Organization of the Competition}
 \label{sec:procedure_during_competition}
 
-\subsection{Stage system}\label{rule:stages}
+\subsection{Stage System}\label{rule:stages}
 
 The competition features a \iterm{stage system}. It is organized in two stages each consisting of a number of specific tasks. It ends with the \iterm{Finals}.
 
-Each \iaterm{stage} comprehends a set of tasks grouped in two thematic scenarios.
+Each \iterm{stage} consists of a set of tasks grouped in two thematic scenarios.
 % \iaterm{House Cleaner} and \iaterm{Party Host}.
-The \iaterm{Housekeeper} scenario features tasks related to cleaning, organizing, and giving maintenance; while the \iaterm{Party Host} scenario focuses in attending guests needs and providing general assistance during a party.
+The \iterm{Housekeeper} scenario features tasks related to cleaning, organizing, and giving maintenance; while the \iterm{Party Host} scenario focuses on attending guests' needs and providing general assistance during a party.
 
 \begin{enumerate}
 	\item \textbf{Robot Inspection:} For security, robots are inspected during setup days.
   A robot must pass \iterm{Robot Inspection} test (see~\refsec{sec:robot_inspection}) in order to compete.
 
-	\item \textbf{Stage~I:} The first days of the competition called \iterm{Stage~I}.
+	\item \textbf{Stage~I:} The first days of the competition are called \iterm{Stage~I}.
 	All qualified teams can participate in \iterm{Stage~I}.
 	The same task can be performed multiple times (See~\refsec{rule:score_system}).
 
 	\item \textbf{Stage~II:} The best \emph{50\% of teams}\footnotemark (after Stage~I) advance to \iterm{Stage~II}.
-	Here, tasks require more complex abilities or combinations of abilities.\\
+	Here, tasks require more complex abilities or combinations of abilities.
 	\footnotetext{If the total number of teams is less than 12, up to 6 teams may advance to Stage~II}
-
+	
 	\item \textbf{Final demonstration:} The best \emph{two teams} of each league, the ones with the highest score after Stage~II, advance to the final round.
 	The final round features only a single task integrating all tested abilities.
-	In order to participate in the Finals, a team must have solved at least one task of the Stage~II.
+	In order to participate in the Finals, a team must have solved at least one Stage~II task.
 \end{enumerate}
 
 In case of having no considerable score deviation between a team advancing to the next stage and a team dropping out, the TC may announce additional teams advancing to the next stage.
@@ -36,8 +36,8 @@ In case of having no considerable score deviation between a team advancing to th
 
 \begin{enumerate}
 	\item \textbf{Thematic scenario blocks:} Each \iterm{thematic scenario} or \iterm{theme} is split in two \iterm{blocks}.
-	At least two blocks are scheduled per day, having each block an assigned theme and lasting no less than two hours.
-	The \iaterm{Organizing Committee}{OC} announces the schedule during the setup days (see Table \ref{tbl:schedule}).
+	At least two blocks are scheduled per day, each has a theme assigned and lasts no less than two hours.
+	The \iaterm{Organizing Committee}{OC} announces the schedule during the setup days (see Table \ref{tbl:schedule}). One exception is the restaurant test which will have its own block for organizational reasons. The restaurant block will be part of the \iterm{Stage~II} party host block during which teams can either choose to participate in the restaurant test or not. The restaurant test can not be chosen in other time slots.
 
 	\item \textbf{Slots:} The \iaterm{Organizing Committee}{OC} assigns at least two \iterm{test slots} of 5 minutes to each team in each block.
    The maximum number of \iterm{tests slots} will be announced during setup days by the \iaterm{Technical Committee}{TC} based on the available time and the number of participating teams.
@@ -45,7 +45,7 @@ In case of having no considerable score deviation between a team advancing to th
 	Remaining block time can be used to assign additional testing slots to interested teams.
 	Testing slots are randomly assigned to teams in each block.
 
-	\item \textbf{Tests:} Teams must inform the OC in advance which task(s) will try to solve.
+	\item \textbf{Tests:} Teams must inform the OC in advance which task(s) they will try to solve.
 	Only one task can be attempted per test slot.
 
 	\item \textbf{Participation is default:} Teams have to indicate to the \iaterm{Organizing Committee}{OC} when they are \emph{skipping} a test slot. Without such indication, they may receive a penalty when not attending (see~\refsec{rule:not_attending}).
@@ -59,10 +59,13 @@ In case of having no considerable score deviation between a team advancing to th
 	\newcommand{\teams}[3]{%
 		\tiny
 		\begin{tabular}{c}%
-			\textit{Test slot 1, team $#1$}\\
-			\textit{Test slot 2, team $#2$}\\
+			\textit{Slot 1, team $#1$}\\
+			\textit{Slot 2, team $#2$}\\
 			$\vdots$\\
-			\textit{Test slot $n$, team $#3$}\\
+			\textit{Slot $n/2$, team $#3$}\\
+			\textit{Slot $n/2 + 1$, team $#1$}\\
+			$\vdots$\\
+			\textit{Slot $n$, team $#3$}\\
 		\end{tabular}
 	}
 	\newcommand{\wcell}[2]{%
@@ -90,54 +93,53 @@ In case of having no considerable score deviation between a team advancing to th
 		& \multicolumn{1}{ c }{\cellcolor{white} Day 4 }
 		\\\cline{2-5}
 	\cell{Block 1\\\footnotesize(9:00 - 12:00)}
-		& \cell{Housekeeper\\\teams{i}{j}{i}}
-		& \cell{Party Host\\\teams{k}{i}{k}}
-		& \cell{Housekeeper\\\teams{i}{j}{i}}
-		& \cell{Party Host\\\teams{j}{k}{j}}\\\cline{2-5}
+		& \cell{Housekeeper\\\teams{i}{j}{k}}
+		& \cell{Party Host\\\teams{k}{i}{j}}
+		& \cell{Housekeeper\\\teams{j}{i}{k}}
+		& \cell{Party Host\\\teams{i}{k}{j}}\\\cline{2-5}
 
 	\multicolumn{1}{ c }{}
 		& \multicolumn{4}{ c }{\wcell{0.5\baselineskip}{\color{gray}Lunch}}\\\cline{2-5}
 
 	\cell{Block 2\\\footnotesize(14:00 - 17:00)}
-		& \cell{Housekeeper\\\teams{i}{k}{i}}
-		& \cell{Party Host\\\teams{k}{j}{k}}
-		& \cell{Party Host\\\teams{i}{i}{k}}
-		& \cell{Housekeeper\\\teams{k}{j}{j}}\\\cline{2-5}
+		& \cell{Housekeeper\\\teams{k}{j}{i}}
+		& \cell{Party Host\\\teams{j}{k}{i}}
+		& \cell{Party Host\\\teams{i}{j}{k}}
+		& \cell{Housekeeper\\\teams{k}{i}{j}}\\\cline{2-5}
 
 	\multicolumn{1}{ c }{}
 		& \multicolumn{2}{ c }{\wcell{0.5\baselineskip}{\color[HTML]{029734}Stage 1}}
 		& \multicolumn{2}{ c }{\wcell{0.5\baselineskip}{\color[HTML]{6668e5}Stage 2}}\\
 	\end{tabular}
 
-	\caption{Example schedule.
-		Each team has assigned at least two test slots in every block.
-		At least two blocks are scheduled per day with an assigned theme.
-		A team can choose a different task in each test, meaning at least 4 different tests per stage.
+	\caption{Exemplary schedule:
+		In this example there are two blocks for each theme in both stages.
+		Each team has two test slots in every block meaning a team can choose to perform the same task four times, perform four different ones or anything in between for one theme in a stage.
 	}
 	\label{tbl:schedule}
 \end{table}
 
 
-\subsection{Score system}
+\subsection{Score System}
 \label{rule:score_system}
 Each task has a main objective and a set of scoring bonuses.
-To score in a test, a team must successfully accomplish the main objective of the task; bonuses are not considered otherwise.
-Overall scoring is calculated as the sum of the maximum score obtained in each ability.
+To score in a test, a team must successfully accomplish the main objective of the task.
+If a task's main goal has incremental scoring, the score for these increments is still awarded even if a team did not achieve the full goal. Bonus points are only awarded if at least one increment of the main goal is achieved.
+Overall scoring is calculated as the sum of the maximum scores obtained in each individual test.
 
-The \iaterm{score system} has the following constrains
+The \iterm{score system} has the following constrains
 \begin{enumerate}
-
-	\item \textbf{Stage~I:} The maximum total score per task in \iterm{Stage~I} is \scoring{1000 points}.
+	\item \textbf{Stage~I:} The maximum score per task in \iterm{Stage~I} is \scoring{1000 points}.
 	
-	\item \textbf{Stage~II:} The maximum total score per task in \iterm{Stage~I} is \scoring{2000 points}.
+	\item \textbf{Stage~II:} The maximum score per task in \iterm{Stage~I} is \scoring{2000 points}.
 
 	\item \textbf{\iterm{Finals}:} Final score is normalized and a special evaluation is used.
 
-	\item \textbf{Minimum score:} The minimum total score per test in \iterm{Stage~I} and \iterm{Stage~II} is \scoring{0 points}.
+	\item \textbf{Minimum score:} The minimum score per test in \iterm{Stage~I} and \iterm{Stage~II} is \scoring{0 points}.
 	Teams cannot receive negative points.
 
 	\item \textbf{Penalties:} An exception to \emph{minimum score} rule are penalties.
-	Both penalties for not attending (see~\refsec{rule:not_attending}) and extraordinary penalties (see~\refsec{rule:extraordinary_penalties}) can cause a total negative score.
+	Both penalties for not attending (see~\refsec{rule:not_attending}) and extraordinary penalties (see~\refsec{rule:extraordinary_penalties}) can cause a negative score.
 \end{enumerate}
 
 
